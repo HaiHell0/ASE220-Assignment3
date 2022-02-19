@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="temp.css">
-    </head>
-    <body>
-        <h1>Demo</h1>
-        <div id="demo"></div>
-        <script src = "dogArray.js"></script>
-        <script src = "javaScript.js"></script> 
-        <script src = "jsIndex.js"></script>
-
-    </body>
-
-
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Kenton County Animal Shelter</h1>
+    <select
+      onchange="changeDpp()"
+      id="dpp"
+      class="form-select"
+      aria-label="Default select example"
+    >
+      <option value="5">Results per page: 5</option>
+      <option value="10">Results per page: 10</option>
+      <option value="15">Results per page: 15</option>
+      <option value="20">Results per page: 20</option>
+    </select>
+    <div class="nav">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination" id="page-list"></ul>
+      </nav>
+    </div>
+    <div
+      id="dog-list"
+      class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+    ></div>
+    <script src="dogs.js"></script>
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
