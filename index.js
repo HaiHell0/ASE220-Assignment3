@@ -32,16 +32,14 @@ function displayDogsForPage(dpp, page = 1) {
     var dog = animalList[offset++];
     document.getElementById("dog-list").innerHTML += `<div class="col" >
                       <div class="card border-success mb-3 p-4 m-lg-4 m-md-3.5 m-4">
-                        <img src="${
-                          dog.Pics[0]
-                        }" class="card-img-top" alt="...">
+                        <img src="${dog.Pics[0]
+      }" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">${dog.Name}</h5>
                           <p>${dog.Breed}</p>
                           <p>Sprayed/Neutered: ${dog.SpayedNeutered}</p>
-                          <p>${dog.Sex} - ${dog.Age.Years}Yrs ${
-      dog.Age.Months
-    }Mths ${dog.Age.Weeks}Wks ${dog.Age.approx ? "(approx)" : ""}</p>
+                          <p>${dog.Sex} - ${dog.Age.Years}Yrs ${dog.Age.Months
+      }Mths ${dog.Age.Weeks}Wks ${dog.Age.approx ? "(approx)" : ""}</p>
                           <p>${dog.Breed}</p>
                           <a href="detail.html?index=${i}" class="btn btn-success">View Details</a>
                         </div>
