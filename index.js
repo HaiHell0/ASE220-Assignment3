@@ -24,7 +24,7 @@ function displayPages(dpp) {
                                                       </a>
                                                     </li>`;
 }
-
+ 
 function displayDogsForPage(dpp, page = 1) {
   document.getElementById("dog-list").innerHTML = "";
   var offset = dpp * (page - 1);
